@@ -30,7 +30,7 @@ Desenvolver uma aplicação web completa de gerenciamento de biblioteca com duas
 
 ## User Stories
 
-### US-001: CRUD de Livros
+### US-001: CRUD de Livros ✅ DONE
 
 - **Summary:** Gerenciamento completo de livros no acervo da biblioteca
 
@@ -182,7 +182,7 @@ Desenvolver uma aplicação web completa de gerenciamento de biblioteca com duas
 - Dependências: spring-boot-starter-security, jjwt
 
 
-### US-004: Autorização RBAC
+### US-004: Autorização RBAC ✅ DONE
 
 - **Summary:** Controle de acesso baseado em perfis (admin e usuario)
 
