@@ -80,7 +80,7 @@ Desenvolver uma aplicação web completa de gerenciamento de biblioteca com duas
 
 ---
 
-### US-002: CRUD de Empréstimos
+### US-002: CRUD de Empréstimos ✅ DONE
 
 - **Summary:** Gerenciamento de empréstimos e devoluções de livros
 
