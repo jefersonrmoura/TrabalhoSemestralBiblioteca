@@ -379,7 +379,7 @@ Desenvolver uma aplicação web completa de gerenciamento de biblioteca com duas
 
 ---
 
-### US-009: Docker e Docker Compose
+### US-009: Docker e Docker Compose ✅ DONE
 
 - **Summary:** Containerização completa do projeto com docker-compose
 
