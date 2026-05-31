@@ -250,7 +250,7 @@ Desenvolver uma aplicação web completa de gerenciamento de biblioteca com duas
 
 ---
 
-### US-006: Testes Unitários
+### US-006: Testes Unitários ✅ DONE
 
 - **Summary:** Testes da camada de serviço com cenários de sucesso e erro
 
