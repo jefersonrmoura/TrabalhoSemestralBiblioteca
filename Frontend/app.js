@@ -65,6 +65,10 @@ function renderLogin() {
                 <input type="text" id="reg-nome" placeholder="Nome" required minlength="3">
                 <input type="email" id="reg-email" placeholder="Email" required>
                 <input type="password" id="reg-senha" placeholder="Senha (min 6)" required minlength="6">
+                <select id="reg-role">
+                    <option value="USUARIO">Usuário</option>
+                    <option value="ADMIN">Admin</option>
+                </select>
                 <button type="submit" class="btn btn-primary">Registrar</button>
             </form>
         </div>`;
@@ -95,7 +99,7 @@ async function fazerRegistro(e) {
     try {
         const data = await request('/auth/registrar', {
             method: 'POST',
-            body: JSON.stringify({ nome: document.getElementById('reg-nome').value, email: document.getElementById('reg-email').value, senha: document.getElementById('reg-senha').value })
+            body: JSON.stringify({ nome: document.getElementById('reg-nome').value, email: document.getElementById('reg-email').value, senha: document.getElementById('reg-senha').value, role: document.getElementById('reg-role').value })
         });
         salvarAuth(data);
         atualizarNav();

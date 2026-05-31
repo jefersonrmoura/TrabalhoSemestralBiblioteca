@@ -33,7 +33,12 @@ public class AuthServiceImpl implements AuthService {
             throw new ConflictException("Email já cadastrado");
         }
 
-        Role role = usuarioRepository.count() == 0 ? Role.ADMIN : Role.USUARIO;
+        Role role;
+        try {
+            role = Role.valueOf(request.role().toUpperCase());
+        } catch (IllegalArgumentException e) {
+            throw new BusinessException("Role inválido. Use ADMIN ou USUARIO");
+        }
 
         Usuario usuario = new Usuario(
                 request.nome(),
