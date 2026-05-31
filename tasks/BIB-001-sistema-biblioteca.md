@@ -216,7 +216,7 @@ Desenvolver uma aplicação web completa de gerenciamento de biblioteca com duas
 
 ---
 
-### US-005: Documentação Swagger/OpenAPI
+### US-005: Documentação Swagger/OpenAPI ✅ DONE
 
 - **Summary:** Documentação interativa de todos os endpoints da API
 
@@ -289,7 +289,7 @@ Desenvolver uma aplicação web completa de gerenciamento de biblioteca com duas
 
 ---
 
-### US-007: Princípios SOLID
+### US-007: Princípios SOLID ✅ DONE
 
 - **Summary:** Aplicação de pelo menos 3 princípios SOLID no backend
 
