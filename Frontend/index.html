@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Biblioteca</h1>
+        <nav id="nav" style="display:none;">
+            <button onclick="navegarPara('livros')">Livros</button>
+            <button onclick="navegarPara('emprestimos')">Empréstimos</button>
+            <span id="usuario-info"></span>
+            <button onclick="logout()">Sair</button>
+        </nav>
+    </header>
+
+    <main id="app">
+        <!-- Conteúdo dinâmico renderizado aqui -->
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

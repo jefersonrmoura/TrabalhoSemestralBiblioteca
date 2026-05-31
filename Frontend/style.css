@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #1a1617;
+    color: rgba(255, 255, 255, 0.7);
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(26, 22, 23, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+header h1 {
+    font-family: 'Bebas Neue', system-ui, sans-serif;
+    font-size: 1.8rem;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+
+nav button {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    border: 2px solid rgba(255, 0, 141, 0.3);
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.25s ease;
+}
+
+nav button:hover {
+    background: #ff008d;
+    color: #ffffff;
+    border-color: #ff008d;
+}
+
+#usuario-info {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    color: #a6adbb;
+}
+
+main {
+    max-width: 960px;
+    margin: 48px auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: rgba(18, 14, 16, 0.92);
+    border-radius: 14px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 24px 60px 0px, rgba(255, 0, 141, 0.04) 0px 0px 0px 1px inset;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: 'Bebas Neue', system-ui, sans-serif;
+    font-size: 2.4rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+form { display: flex; flex-direction: column; gap: 0.75rem; }
+
+input, select {
+    padding: 0.7rem 1rem;
+    background: rgba(13, 13, 13, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.2s ease;
+}
+
+input::placeholder { color: #a6adbb; }
+input:focus { outline: none; border-color: rgba(255, 0, 141, 0.4); }
+
+.btn {
+    padding: 0.7rem 1.8rem;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.25s ease;
+}
+
+.btn-primary {
+    background: transparent;
+    border-color: #ff008d;
+    color: #ff008d;
+}
+.btn-primary:hover { background: #ff008d; color: #ffffff; }
+
+.btn-danger {
+    background: transparent;
+    border-color: #ff008d;
+    color: #ff008d;
+}
+.btn-danger:hover { background: #ff008d; color: #ffffff; }
+
+.btn-success {
+    background: transparent;
+    border-color: #23d18b;
+    color: #23d18b;
+}
+.btn-success:hover { background: #23d18b; color: #0d0d0d; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+th {
+    color: #a6adbb;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td { color: rgba(255, 255, 255, 0.7); }
+
+tr:hover { background: rgba(255, 255, 255, 0.05); }
+
+.actions { display: flex; gap: 0.5rem; }
+
+.msg {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.msg-erro { background: rgba(255, 0, 141, 0.1); color: #ff008d; border: 1px solid rgba(255, 0, 141, 0.2); }
+.msg-sucesso { background: rgba(35, 209, 139, 0.1); color: #23d18b; border: 1px solid rgba(35, 209, 139, 0.2); }
+
+.tabs { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; }
+
+.tab {
+    padding: 0.5rem 1.2rem;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50px;
+    cursor: pointer;
+    color: #a6adbb;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.25s ease;
+}
+
+.tab:hover { border-color: rgba(255, 0, 141, 0.3); color: #ffffff; }
+.tab.active { background: #ff008d; border-color: #ff008d; color: #ffffff; }

@@ -328,7 +328,7 @@ Desenvolver uma aplicação web completa de gerenciamento de biblioteca com duas
 
 ---
 
-### US-008: Frontend SPA
+### US-008: Frontend SPA ✅ DONE
 
 - **Summary:** Página web com navegação assíncrona consumindo a API
 
