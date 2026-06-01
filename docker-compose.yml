@@ -16,7 +16,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      - SPRING_DATA_MONGODB_URI=mongodb://mongodb:27017/biblioteca
+      - SPRING_MONGODB_URI=mongodb://mongodb:27017/biblioteca
     depends_on:
       mongodb:
         condition: service_healthy
